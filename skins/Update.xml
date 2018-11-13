@@ -1,0 +1,50 @@
+﻿<Window size="480,300" roundcorner="5,5" caption="0,0,0,30" showshadow="true" shadowsize="5" shadowposition="1,1" shadowcolor="#333333">
+	<Font id="0" name="微软雅黑" size="16" default="true"/>
+	<Font id="1" name="微软雅黑" size="12"/>
+	<Font id="2" name="微软雅黑" size="14"/>
+	<Default name="VScrollBar" shared="true" value="button1normalimage=&quot;file='update\scrollbar.bmp' source='0,90,16,106' mask='#FFFF00FF'&quot; button1hotimage=&quot;file='update\scrollbar.bmp' source='18,90,34,106' mask='#FFFF00FF'&quot; button1pushedimage=&quot;file='update\scrollbar.bmp' source='36,90,52,106' mask='#FFFF00FF'&quot; button1disabledimage=&quot;file='update\scrollbar.bmp' source='54,90,70,106' mask='#FFFF00FF'&quot; button2normalimage=&quot;file='update\scrollbar.bmp' source='0,108,16,124' mask='#FFFF00FF'&quot; button2hotimage=&quot;file='update\scrollbar.bmp' source='18,108,34,124' mask='#FFFF00FF'&quot; button2pushedimage=&quot;file='update\scrollbar.bmp' source='36,108,52,124' mask='#FFFF00FF'&quot; button2disabledimage=&quot;file='update\scrollbar.bmp' source='54,108,70,124' mask='#FFFF00FF'&quot; thumbnormalimage=&quot;file='update\scrollbar.bmp' source='0,126,16,142' corner='2,2,2,2' mask='#FFFF00FF'&quot; thumbhotimage=&quot;file='update\scrollbar.bmp' source='18,126,34,142' corner='2,2,2,2' mask='#FFFF00FF'&quot; thumbpushedimage=&quot;file='update\scrollbar.bmp' source='36,126,52,142' corner='2,2,2,2' mask='#FFFF00FF'&quot; thumbdisabledimage=&quot;file='update\scrollbar.bmp' source='54,126,70,142' corner='2,2,2,2' mask='#FFFF00FF'&quot; railnormalimage=&quot;file='update\scrollbar.bmp' source='0,144,16,160' corner='2,2,2,2' mask='#FFFF00FF'&quot; railhotimage=&quot;file='update\scrollbar.bmp' source='18,144,34,160' corner='2,2,2,2' mask='#FFFF00FF'&quot; railpushedimage=&quot;file='update\scrollbar.bmp' source='36,144,52,160' corner='2,2,2,2' mask='#FFFF00FF'&quot; raildisabledimage=&quot;file='update\scrollbar.bmp' source='54,144,70,160' corner='2,2,2,2' mask='#FFFF00FF'&quot; bknormalimage=&quot;file='update\scrollbar.bmp' source='0,162,16,178' corner='2,2,2,2' mask='#FFFF00FF'&quot; bkhotimage=&quot;file='update\scrollbar.bmp' source='18,162,34,178' corner='2,2,2,2' mask='#FFFF00FF'&quot; bkpushedimage=&quot;file='update\scrollbar.bmp' source='36,162,52,178' corner='2,2,2,2' mask='#FFFF00FF'&quot; bkdisabledimage=&quot;file='update\scrollbar.bmp' source='54,162,70,178' corner='2,2,2,2' mask='#FFFF00FF'&quot; " />
+	
+	<VerticalLayout bkimage="file='update\bgtc.png' corner='30,30,30,30' source='0,0,360,220'">
+		<HorizontalLayout height="30" bkimage="update\ico-zjdakai.png" >
+			<Container padding="5,3,0,0" width="24" height="24" bkimage="update\logo.png" />
+			<Label name="labelCaption" text="检查更新" padding="5,0,0,0" font="0" textcolor="#FFFFFFFF" endellipsis="true"/>
+			<Control />
+			<Button name="minbtn" tooltip="最小化" float="true" pos="420,0,450,29" normalimage="update\btn-min-01.png" hotimage="update\btn-min-02.png" pushedimage="update\btn-min-03.png" />
+			<Button name="closebtn" tooltip="关闭" float="true" pos="450,0,480,29" normalimage="update\btn-close-01.png" hotimage="update\btn-close-02.png" pushedimage="update\btn-close-03.png"  disabledimage="update\btn-close-04.png"/>
+		</HorizontalLayout>
+
+		<TabLayout name="tab" width="400" height="220" padding="40,20,0,0">
+			<VerticalLayout bkcolor="FFF7F7F7">
+					<VerticalLayout name="updateInfo" width="400" height="180" bkcolor="FFFFFFFF" vscrollbar="true" >
+						<VerticalLayout width="380" height="200" padding="10,10,0,0" bkcolor="FFFFFFFF">
+							<HorizontalLayout height="14">
+								<Label text="当前版本：" autocalcwidth="true" align="left" font="1" textcolor="#FF333333" />
+								<Label name="labelVersion" text="1.0.0.1" align="left" font="2" textcolor="#FF333333" />
+							</HorizontalLayout>
+							<HorizontalLayout height="14" padding="0,12,0,0">
+								<Label text="最新版本：" autocalcwidth="true" align="left" font="1" textcolor="#FF333333" />
+								<Label name="labelLatestVersion" text="1.1.1.1" align="left" font="2" textcolor="#FF333333" />
+							</HorizontalLayout>
+							<HorizontalLayout height="14" padding="0,12,0,0">
+								<Label text="新版本大小：" autocalcwidth="true" align="left" font="1" textcolor="#FF333333" />
+								<Label name="labelFilesize" text="32.4M" align="left" font="2" textcolor="#FF333333" />
+							</HorizontalLayout>
+
+							<Container width="400" height="1" padding="0,10,0,0" bkimage="update/split.png"/>
+
+							<Label name="labelContent" text="更新内容" padding="0,5,0,0" align="left" font="0" textcolor="#FF333333" />
+							<Text name="textContent" padding="0,5,0,0" height="140" align="left" font="2" textcolor="#FF666666" text="优化软件启动速度新增XXXX功能修复XXXXX的BUG优化软件启动速度新增XXXX功能修复XXXXX的BUG优化软件启动速度新增XXXX功能修复XXXXX的BUG优化软件启动速度新增XXXX功能修复XXXXX的BUG优化软件启动速度新增XXXX功能修复XXXXX的BUG优化软件启动速度新增XXXX功能修复XXXXX的BUG优化软件启动速度新增XXXX功能修复XXXXX的BUG优化软件启动速度新增XXXX功能修复XXXXX的BUG优化软件启动速度新增XXXX功能修复XXXXX的BUG优化软件启动速度新增XXXX功能修复XXXXX的BUG优化软件启动速度新增XXXX功能修复XXXXX的BUG优化软件启动速度新增XXXX功能修复XXXXX的BUG优化软件启动速度新增XXXX功能修复XXXXX的BUG优化软件启动速度新增XXXX功能修复XXXXX的BUG优化软件启动速度新增XXXX功能修复XXXXX的BUG优化软件启动速度新增XXXX功能修复XXXXX的BUG优化软件启动速度新增XXXX功能修复XXXXX的BUG优化软件启动速度新增XXXX功能修复XXXXX的BUG优化软件启动速度新增XXXX功能修复XXXXX的BUG优化软件启动速度新增XXXX功能修复XXXXX的BUG" />
+						</VerticalLayout>
+					</VerticalLayout>
+
+					<HorizontalLayout height="30" padding="0,10,0,0" height="30" bkcolor="FFF7F7F7">
+							<Button name="updatenextbtn" tooltip="下次再说" width="120" normalimage="update\btn-xiaci-01.png" hotimage="update\btn-xiaci-02.png" pushedimage="update\btn-xiaci-03.png"  disabledimage="update\btn-xiaci-04.png"/>
+							<Control />
+							<Button name="updatenowbtn" tooltip="立即更新" width="120" normalimage="update\btn-gengxin-01.png" hotimage="update\btn-gengxin-02.png" pushedimage="update\btn-gengxin-03.png" />
+					</HorizontalLayout>
+			</VerticalLayout>
+			<UpdateDownload />
+			<UpdateInstall />
+		</TabLayout>
+	</VerticalLayout>
+</Window>

@@ -1,0 +1,12 @@
+﻿<Window size="400,220">
+	<Font id="0" name="微软雅黑" size="16" default="true"/>
+	<Font id="1" name="微软雅黑" size="12"/>
+	<Font id="2" name="微软雅黑" size="14"/>
+	<VerticalLayout bkcolor="FFF7F7F7">
+			<TabLayout name="tiptab" padding="0,60,0,0" height="20" >
+				<Label text="正在下载，请稍后..." autocalcwidth="true" align="left" font="0" textcolor="#FF333333" />
+				<Label text="*网络连接失败，请检查你的网络之后再试..." autocalcwidth="true"  align="left" font="0" textcolor="#FFFF0000" />
+			</TabLayout>
+			<Progress name="progressctrl" height="22" padding="0,18,0,0" bkimage="update\jindu-01.png" foreimage="update\jindu-02.png" min="0" max="100" value="0" hor="true" align="center" />
+	</VerticalLayout>
+</Window>

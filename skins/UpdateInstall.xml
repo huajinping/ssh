@@ -1,0 +1,20 @@
+﻿<Window size="400,220">
+	<Font id="0" name="微软雅黑" size="16" default="true"/>
+	<Font id="1" name="微软雅黑" size="12"/>
+	<Font id="2" name="微软雅黑" size="14"/>
+	<VerticalLayout bkcolor="FFF7F7F7">
+		<VerticalLayout>
+			<HorizontalLayout height="130" padding="0,20,0,0">
+				<Control />
+				<Container width="130" height="130" bkimage="update/ok.png" />
+				<Control />
+			</HorizontalLayout>
+			
+			<HorizontalLayout height="30" padding="0,40,0,0">
+				<Button name="installnextbtn" tooltip="下次再说" width="120" height="30" normalimage="update\btn-xiaci-01.png" hotimage="update\btn-xiaci-02.png" pushedimage="update\btn-xiaci-03.png" disabledimage="update\btn-xiaci-04.png" />
+				<Control />
+				<Button name="installnowbtn" tooltip="立即安装" width="120" height="30" normalimage="update\btn-anzhuang-01.png" hotimage="update\btn-anzhuang-02.png" pushedimage="update\btn-anzhuang-03.png" />
+			</HorizontalLayout>
+		</VerticalLayout>
+	</VerticalLayout>
+</Window>
